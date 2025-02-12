@@ -1,12 +1,17 @@
-export class ButtonComponent {
+export class ButtonBack {
   constructor(parent) {
     this.parent = parent;
   }
 
-  render() {
+  addListeners(listener) {
+    document.getElementById('back-button').addEventListener('click', listener);
+  }
+
+  render(listener) {
     this.parent.insertAdjacentHTML(
       'beforeend',
-      '<button type="button" class="btn btn-primary">Hello world 4!</button>',
+      '<button type="button" id="back-button" class="btn btn-primary position-absolute top-0 start-0" >назад</button>',
     );
+    this.addListeners(listener);
   }
 }

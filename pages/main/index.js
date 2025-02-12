@@ -15,19 +15,13 @@ export class MainPage {
         `;
   }
 
-  // clickCard(e) {
-  //   const cardId = e.target.dataset.id;
-
-  //   const subjectPage = new SubjectPage(this.parent, cardId);
-  //   subjectPage.render();
-  // }
 
   render() {
     this.parent.innerHTML = '';
     const html = this.getHTML();
     this.parent.insertAdjacentHTML('beforeend', html);
 
-    const carousel = new CarouselCustom(this.pageRoot);
+    const carousel = new CarouselCustom(this.parent, this.pageRoot);
     carousel.render();
   }
 }
