@@ -11,7 +11,7 @@ export class SubjectPage {
 
   getHTML() {
     return `
-            <div id="main-page" class="d-flex position-relative flex-column w-100 h-100 flex-wrap align-items-center justify-content-center"><div/>
+            <div id="main-page" class="d-flex py-4 position-relative flex-column w-100 h-100 flex-wrap align-items-center justify-content-center"><div/>
         `;
   }
 

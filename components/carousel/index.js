@@ -37,7 +37,7 @@ export class CarouselCustom {
                 <img src="${slide.image}" class="d-block w-100" alt="${
             slide.alt
           }">
-                <button class=' position-absolute top-0 end-0' id="${
+                <button class=' position-absolute top-0 end-0 rounded' id="${
                   slide.id
                 }" onclick = this.onClick>Перейти</button>
                 <div class="carousel-caption h-100 d-flex flex-column justify-content-between align-items-center">
@@ -50,7 +50,7 @@ export class CarouselCustom {
 
     this.parent.insertAdjacentHTML(
       'beforeend',
-      `<div id="carouselExampleCaptions" class="carousel carousel-dark slide w-50 border border-3" data-bs-ride="false">
+      `<div id="carouselExampleCaptions" class="carousel carousel-dark slide w-50 border border-3 rounded-2" data-bs-ride="false">
                 <div class="carousel-indicators">${indicators}</div>
                 <div class="carousel-inner">${items}</div>
                 <button class="carousel-control-prev h-50 my-auto" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
